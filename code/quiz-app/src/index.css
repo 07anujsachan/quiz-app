@@ -1,0 +1,414 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* home  */
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.quiz-head {
+  font-size: 78px;
+  background: -webkit-linear-gradient(#8646c4, #54b5ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  margin-top: 4rem;
+  text-align: center;
+}
+.intro-img {
+  width: 80%;
+  margin: 1rem 0 0 7rem;
+  object-fit: cover;
+}
+.q-mrk {
+  font-size: 88px;
+  background: -webkit-linear-gradient(#8646c4, #54b5ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  margin-top: 4rem;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  right: 690px;
+  transform: rotate(30deg);
+}
+.intro-para {
+  width: 60%;
+  line-height: 1.4;
+  font-size: 20px;
+  color: gray;
+  margin-left: 250px;
+  text-align: center;
+}
+
+.intro-btn {
+  margin-top: 1.5rem;
+  margin-left: 500px;
+  background-color: #8646c4;
+  color: white;
+  border: none;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 0.9rem 1.5rem;
+  box-shadow: 0px 0px 16px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.intro-btn:hover {
+  color: #8646c4;
+  background-color: white;
+}
+.img-container {
+  text-align: center;
+}
+/* category */
+
+.container2 {
+  background: linear-gradient(to right bottom, #8646c4, #54b5ec);
+  height: 100vh;
+
+  padding: 2rem;
+}
+.cat-head {
+  font-size: 46px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+.select {
+  color: aliceblue;
+  font-size: 32px;
+  margin: 2rem 0;
+}
+.btn-warp {
+  width: 100%;
+
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cat-btn {
+  margin: 0.5rem 1rem;
+  padding: 0.8rem 0.5rem;
+  border: 1px solid #8646c4;
+  border-radius: 10px;
+  width: 350px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 15px;
+  color: #8646c4;
+  background-color: #dec6f9;
+}
+.active {
+  margin: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #8646c4;
+  border-radius: 10px;
+  width: 350px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 15px;
+  color: #8646c4;
+  background-color: white;
+}
+
+.start-btn:hover {
+  margin: 3rem 40rem;
+  padding: 0.8rem 2rem;
+  border: 1px solid #8646c4;
+  border-radius: 10px;
+  width: 350px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 32px;
+  color: #dd590d;
+  background-color: white;
+}
+.start-btn {
+  margin: 3rem 40rem;
+  padding: 0.8rem 2rem;
+  border: 1px solid #8646c4;
+  border-radius: 10px;
+  width: 350px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 32px;
+  color: #8646c4;
+
+  background-color: white;
+}
+
+/* quiz */
+.quiz-container {
+  background: linear-gradient(to right bottom, #8646c4, #54b5ec);
+  height: 100vh;
+
+  padding: 3rem 2rem 2rem 2rem;
+}
+.container3 {
+  background-color: #fefcfe;
+  height: 80vh;
+
+  padding: 3rem;
+}
+.quiz-head2 {
+  font-size: 46px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+.gif {
+  object-fit: cover;
+  width: 100%;
+  height: 70vh;
+}
+.gif-div {
+  width: 45%;
+  margin-top: 6rem;
+}
+.ques-div {
+  width: 48%;
+  background: linear-gradient(to right bottom, #8646c4, #54b5ec);
+  margin-top: 6rem;
+  height: 60vh;
+  border-radius: 40px;
+  padding: 2rem;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.ques-no {
+  color: rgb(243, 239, 239);
+  font-size: 20px;
+}
+.question {
+  color: #162eb0;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 2rem 0;
+  overflow: hidden;
+  background-color: white;
+  padding: 1.6rem 0.8rem;
+  border-radius: 25px;
+}
+.answers {
+  margin: 2rem 0;
+
+  width: 100%;
+}
+.ans-btn {
+  width: 45%;
+  padding: 1.6rem 0.8rem;
+  border-radius: 25px;
+  margin-left: 1.6rem;
+  font-size: 24px;
+  margin-top: 2rem;
+  color: #162eb0;
+  border: 1px solid #162eb0;
+}
+.selected {
+  width: 45%;
+  padding: 1.6rem 0.8rem;
+  border-radius: 25px;
+  margin-left: 1.6rem;
+  font-size: 24px;
+  margin-top: 2rem;
+  color: white;
+  background-color: #fec042;
+  border: 1px solid white;
+}
+.next-btn {
+  background-color: #fe7002;
+  font-size: 22px;
+  color: white;
+  padding: 1rem 3rem;
+  border: 1px solid white;
+  border-radius: 25px;
+
+  margin-top: 1rem;
+  font-weight: 700;
+}
+.dis-flx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* report */
+
+.rep-container {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.rep-head {
+  font-size: 42px;
+  font-weight: 600;
+
+  margin: 2rem 0;
+}
+.score {
+  font-size: 2rem;
+  font-weight: 600;
+
+  margin: 2.5rem 0;
+}
+.space-btw {
+  justify-content: space-between;
+}
+.rep-ques {
+  width: 40%;
+}
+.rep-cans {
+  width: 20%;
+}
+.rep-ans {
+  width: 20%;
+}
+.rep-tick {
+  width: 20%;
+}
+.border {
+  border: 1px solid;
+  padding: 1rem;
+  overflow: hidden;
+  text-align: center;
+  height: 40px;
+}
+.border1 {
+  border: 1px solid;
+  padding: 2.5rem 1rem 1rem 1rem;
+  overflow: hidden;
+  text-align: center;
+  height: 40px;
+  font-size: 24px;
+}
