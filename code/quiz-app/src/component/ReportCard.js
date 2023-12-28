@@ -1,4 +1,5 @@
 import React from "react";
+// Componet for the displaying the report card based on the selected answers.
 class ReportCard extends React.Component {
   constructor(props) {
     super(props);

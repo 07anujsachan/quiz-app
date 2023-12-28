@@ -6,6 +6,8 @@ import Quiz from "./component/Quiz";
 import ReportCard from "./component/ReportCard";
 
 let difficulty = ["easy", "medium", "hard"];
+
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -44,7 +46,7 @@ class App extends React.Component {
       }
     });
   };
-
+// Fetches the questions based on selected category and difficulty level. 
   fetchQuestion = () => {
     fetch(
       `https://opentdb.com/api.php?amount=10&category=${this.state.selectedCategory.id}&difficulty=${this.state.selectedDifficulty}`
@@ -52,6 +54,7 @@ class App extends React.Component {
       .then((res) => res.json())
       .then((data) => this.setState({ questions: data.results }));
   };
+   
   fetchCategories = () => {
     fetch("https://opentdb.com/api_category.php")
       .then((res) => res.json())

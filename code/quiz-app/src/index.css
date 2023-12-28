@@ -344,6 +344,7 @@ table {
 }
 .ans-btn {
   width: 45%;
+  overflow: hidden;
   padding: 1.6rem 0.8rem;
   border-radius: 25px;
   margin-left: 1.6rem;

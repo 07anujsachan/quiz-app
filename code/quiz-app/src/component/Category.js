@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// Component for displaying all the available categories.
 class Category extends React.Component {
   constructor(props) {
     super(props);

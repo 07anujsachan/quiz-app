@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import ReportCard from "./ReportCard";
-
+// Componet for the displaying question and answers for the quiz app.
 class Quiz extends React.Component {
   constructor(props) {
     super(props);
@@ -10,6 +10,8 @@ class Quiz extends React.Component {
     this.props.fetchQuestion();
   }
   render() {
+    console.log(this.props);
+
     let answers = this.props.questions[this.props.activeQuestion]
       ? this.props.questions[
           this.props.activeQuestion
